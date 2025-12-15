@@ -1,3 +1,7 @@
+# /*
+#  * Copyright (c) 2025 zhitian111
+#  * Released under the MIT license. See LICENSE for details.
+#  */
 from utility.args import parse_args
 from utility.logger import setup_logger
 from train import train

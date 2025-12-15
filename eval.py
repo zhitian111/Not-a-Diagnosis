@@ -1,4 +1,7 @@
-import torch
+# /*
+#  * Copyright (c) 2025 zhitian111
+#  * Released under the MIT license. See LICENSE for details.
+#  */
 from model.Simple3DCNN import Simple3DCNN
 from model.ResNet3D18 import ResNet3D18
 from dataset import *

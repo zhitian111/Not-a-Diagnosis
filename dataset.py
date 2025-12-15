@@ -1,3 +1,7 @@
+# /*
+#  * Copyright (c) 2025 zhitian111
+#  * Released under the MIT license. See LICENSE for details.
+#  */
 import os
 import numpy as np
 import torch

@@ -1,4 +1,7 @@
-import torch
+# /*
+#  * Copyright (c) 2025 zhitian111
+#  * Released under the MIT license. See LICENSE for details.
+#  */
 import os
 from dataset import LIDCNoduleDataset
 import torch
