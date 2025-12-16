@@ -18,6 +18,12 @@ def gui_main():
     gui_main()
 
 if __name__ == "__main__":
+    random_seed = args.seed
+    import torch
+    import numpy as np
+    torch.manual_seed(random_seed)
+    torch.cuda.manual_seed(random_seed)
+    np.random.seed(random_seed)
     logger_all.info("开始运行...")
     if args.mode == "train":
         logger_train.info("<UNK>...")

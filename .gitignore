@@ -3,3 +3,4 @@ eval_results
 logs
 dataset
 __pycache__
+*.onnx
