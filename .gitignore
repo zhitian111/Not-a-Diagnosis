@@ -1,4 +1,5 @@
-results
+train_results
+eval_results
 logs
 dataset
 __pycache__

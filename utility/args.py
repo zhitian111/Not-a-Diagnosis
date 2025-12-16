@@ -60,8 +60,14 @@ def parse_args():
     parser.add_argument(
         "--model_dir",
         type=str,
-        default="./results/" + time.strftime("%Y%m%d-%H%M%S") + "/models/",
+        default="./train_results/" + time.strftime("%Y%m%d-%H%M%S") + "/models/",
         help="directory to save model"
+    )
+    parser.add_argument(
+        "--eval_dir",
+        type=str,
+        default="./eval_results/" + time.strftime("%Y%m%d-%H%M%S") + "/",
+        help="directory to save eval results"
     )
 
     # log
@@ -75,7 +81,7 @@ def parse_args():
     parser.add_argument(
         "--mode",
         type=str,
-        default="train",
+        default="gui",
     )
 
 

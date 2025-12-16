@@ -6,11 +6,16 @@ from utility.args import parse_args
 from utility.logger import setup_logger
 from train import train
 from eval import eval
+
 args = parse_args()
 logger_all = setup_logger(args.exp_name, args.log_dir, "all.log")
 logger_train = setup_logger(args.exp_name, args.log_dir, "train.log")
 logger_eval = setup_logger(args.exp_name, args.log_dir, "eval.log")
+logger_gui = setup_logger(args.exp_name, args.log_dir, "gui.log")
 
+def gui_main():
+    from gui.main_gui import gui_main
+    gui_main()
 
 if __name__ == "__main__":
     logger_all.info("开始运行...")
@@ -20,4 +25,9 @@ if __name__ == "__main__":
     elif args.mode == "eval":
         logger_eval.info("<UNK>...")
         eval(args, logger_eval)
+    elif args.mode == "gui":
+        logger_gui.info("<UNK>...")
+        gui_main()
+
     logger_all.info("运行结束...")
+

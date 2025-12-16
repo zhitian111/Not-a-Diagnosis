@@ -1,0 +1,116 @@
+/* =======================
+   Global
+======================= */
+QWidget {
+    background-color: #F5F7FA;
+    color: #2E3440;
+    font-family: "Segoe UI", "Microsoft YaHei";
+    font-size: 13px;
+}
+
+/* =======================
+   GroupBox (卡片)
+======================= */
+QGroupBox {
+    background-color: #FFFFFF;
+    border: 1px solid #D8DEE9;
+    border-radius: 8px;
+    margin-top: 12px;
+    padding: 10px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 6px;
+    font-weight: bold;
+    color: #4C566A;
+}
+
+/* =======================
+   Buttons
+======================= */
+QPushButton {
+    background-color: #5E81AC;
+    color: white;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #81A1C1;
+}
+
+QPushButton:pressed {
+    background-color: #4C566A;
+}
+
+QPushButton:disabled {
+    background-color: #D8DEE9;
+    color: #A3A7AF;
+}
+
+/* =======================
+   Labels
+======================= */
+QLabel {
+    color: #2E3440;
+}
+
+QLabel#ResultLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #BF616A;
+}
+
+/* =======================
+   Slider
+======================= */
+QSlider::groove:horizontal {
+    height: 6px;
+    background: #D8DEE9;
+    border-radius: 3px;
+}
+
+QSlider::handle:horizontal {
+    background: #5E81AC;
+    width: 14px;
+    margin: -4px 0;
+    border-radius: 7px;
+}
+
+QSlider::handle:horizontal:hover {
+    background: #81A1C1;
+}
+
+/* =======================
+   ComboBox
+======================= */
+QComboBox {
+    background-color: #FFFFFF;
+    border: 1px solid #D8DEE9;
+    border-radius: 5px;
+    padding: 4px 8px;
+}
+
+/* =======================
+   Tabs
+======================= */
+QTabWidget::pane {
+    border: 1px solid #D8DEE9;
+    border-radius: 6px;
+    background: #FFFFFF;
+}
+
+QTabBar::tab {
+    background: #E5E9F0;
+    padding: 8px 16px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+QTabBar::tab:selected {
+    background: #FFFFFF;
+    font-weight: bold;
+}
