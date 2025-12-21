@@ -4,3 +4,4 @@ logs
 dataset
 __pycache__
 *.onnx
+*.zip
